@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prince ❤️ Rashmi — Royal Wedding Invitation | 09 Mar 2026</title>
+  <meta name="description" content="Join Prince & Rashmi for a royal celebration at Shidhi Vinayak Garden, Munger on 7–9 March 2026. RSVP, view events, venue, family, and gallery." />
+  <meta property="og:title" content="Prince ❤️ Rashmi — Royal Wedding Invitation | 09 Mar 2026" />
+  <meta property="og:description" content="Join Prince & Rashmi for a royal celebration at Shidhi Vinayak Garden, Munger on 7–9 March 2026." />
+  <meta property="og:image" content="" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===========================
+       Design tokens
+       =========================== */
+    :root{
+      --gold: #C9A85A;
+      --gold-20: rgba(201,168,90,0.12);
+      --royal-purple: #3B1F4A;
+      --ivory: #FFF8F2;
+      --soft-blush: #F6E7E4;
+      --glass: rgba(255,255,255,0.12);
+      --charcoal: #2B2B2B;
+      --sparkle: #FFDCA6;
+      --radius: 16px;
+      --max-width: 1100px;
+      --ease-smooth: cubic-bezier(.22,.9,.32,1);
+    }
+
+    /* ===========================
+       Reset / Base
+       =========================== */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, rgba(59,31,74,0.96) 0%, rgba(255,248,242,0.02) 65%), radial-gradient(1200px 600px at 10% 10%, rgba(201,168,90,0.06), transparent 15%);
+      color: var(--ivory);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      overflow-y: auto;
+    }
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; display:block}
+
+    /* ===========================
+       Layout wrapper
+       =========================== */
+    .wrap{
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    /* ===========================
+       Hero
+       =========================== */
+    header.hero{
+      position:relative;
+      height:100vh;
+      min-height:640px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      text-align:center;
+    }
+    .hero-inner{
+      position:relative; z-index:5; width:100%;
+      padding: 40px 20px;
+    }
+    .hero-card{
+      margin: 0 auto;
+      max-width:900px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border:1px solid var(--gold-20);
+      border-radius: 24px;
+      padding: 48px 28px;
+      backdrop-filter: blur(8px) saturate(120%);
+      box-shadow: 0 10px 40px rgba(11,7,15,0.45);
+      transition: transform .45s var(--ease-smooth), box-shadow .45s var(--ease-smooth);
+    }
+    .hero-card:focus-within, .hero-card:hover{ transform: translateY(-6px); box-shadow: 0 18px 60px rgba(11,7,15,0.6)}
+    .monogram{
+      font-family: "Cormorant Garamond", serif;
+      display:flex; align-items:center; justify-content:center; gap:18px;
+      font-weight:700; font-size:64px; letter-spacing: 0.04em;
+      margin-bottom:8px; text-shadow: 0 8px 30px rgba(59,31,74,0.6);
+    }
+    .monogram .heart{
+      color: var(--gold);
+      display:inline-block;
+      transform-origin:center;
+      padding: 6px 12px; border-radius:8px;
+      box-shadow: 0 6px 22px rgba(201,168,90,0.18);
+      border: 1px solid rgba(201,168,90,0.15);
+    }
+    .hero h1{
+      margin: 4px 0 12px 0;
+      font-family:"Cormorant Garamond", serif;
+      font-weight:700;
+      font-size:34px;
+      color:var(--ivory);
+    }
+    .hero p.lead{
+      margin: 0 0 18px 0;
+      color: rgba(255,248,242,0.9);
+      font-size:16px;
+    }
+    .cta-group{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:10px}
+    .btn{
+      padding: 12px 20px; border-radius:12px; border:1px solid rgba(255,255,255,0.06);
+      background:linear-gradient(90deg, rgba(201,168,90,0.12), rgba(255,255,255,0.02));
+      color:var(--ivory); cursor:pointer; font-weight:600;
+      transition: transform .2s var(--ease-smooth), box-shadow .2s var(--ease-smooth);
+    }
+    .btn:active{ transform:translateY(1px) }
+    .btn-ghost{ background:transparent; border:1px solid rgba(255,255,255,0.08) }
+    .small{font-size:13px; color: rgba(255,248,242,0.8) }
+
+    /* ===========================
+       Particles & floating petals (canvas on hero)
+       =========================== */
+    canvas#particles{ position:absolute; inset:0; width:100%; height:100%; z-index:1; pointer-events:none }
+    .petal{
+      position:absolute; width:40px; height:40px; opacity:0.12; transform-origin:center; z-index:2;
+      filter: blur(0.5px);
+    }
+
+    /* ===========================
+       Sections
+       =========================== */
+    section{ padding: 64px 18px; position:relative }
+    .section-title{
+      display:flex; align-items:baseline; gap:12px; margin-bottom:18px;
+    }
+    .section-title h2{
+      font-family:"Cormorant Garamond", serif;
+      margin:0; font-size:28px; letter-spacing:0.02em;
+    }
+    .section-desc{ color: rgba(255,248,242,0.85); margin-bottom:18px; max-width:900px }
+
+    /* Couple story */
+    .story{
+      display:grid; grid-template-columns: 1fr 1fr; gap:18px; align-items:center;
+    }
+    .story .photo{
+      border-radius:18px; overflow:hidden;
+      min-height:280px; background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border:1px solid var(--gold-20); backdrop-filter: blur(6px);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .story .copy{ padding:12px; color:rgba(255,248,242,0.95) }
+
+    /* Timeline */
+    .timeline{
+      display:flex; gap:18px; align-items:stretch; justify-content:center; flex-wrap:wrap;
+    }
+    .event{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px; padding:18px; min-width:240px; border:1px solid var(--gold-20);
+      box-shadow: 0 8px 30px rgba(11,7,15,0.4);
+      transition: transform .35s var(--ease-smooth);
+    }
+    .event:hover{ transform: translateY(-8px) }
+    .event .date{ color:var(--gold); font-weight:700; font-size:13px; margin-bottom:6px }
+    .event .title{ font-family:"Cormorant Garamond", serif; font-size:18px; margin-bottom:6px }
+    .event .meta{ font-size:13px; color: rgba(255,248,242,0.86) }
+
+    /* Venue */
+    .venue-card{ display:flex; gap:18px; align-items:stretch; flex-wrap:wrap }
+    .venue-info{ flex:1; min-width:300px; padding:18px; border-radius:12px; border:1px solid var(--gold-20); background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)) }
+    .map-embed{ flex:1; min-width:300px; border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.04) }
+
+    /* Family */
+    .family-grid{ display:flex; gap:18px; flex-wrap:wrap; justify-content:center }
+    .family-card{ width:260px; padding:18px; border-radius:14px; border:1px solid var(--gold-20); text-align:center; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)) }
+    .family-photo{ width:120px; height:120px; border-radius:50%; margin:0 auto 12px; background:linear-gradient(180deg,#fff2 0%,#0000 60%); border:4px solid rgba(201,168,90,0.14) }
+
+    /* Gallery */
+    .gallery-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:14px }
+    .gallery-item{ position:relative; border-radius:12px; overflow:hidden; min-height:140px; cursor:pointer; border:1px solid rgba(255,255,255,0.03) }
+    .gallery-item:hover img{ transform: scale(1.04) }
+    .gallery-item img{ width:100%; height:100%; object-fit:cover; transition: transform .6s var(--ease-smooth) }
+
+    /* RSVP */
+    .rsvp-card{ max-width:760px; margin:0 auto; padding:18px; border-radius:14px; border:1px solid var(--gold-20); background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); }
+    form .row{ display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px }
+    label{ display:block; font-size:13px; color: rgba(255,248,242,0.9); margin-bottom:6px }
+    input, select, textarea{ width:100%; padding:10px 12px; border-radius:10px; border:1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.03); color:var(--ivory); outline:none }
+    input:focus, select:focus, textarea:focus{ box-shadow: 0 0 18px rgba(201,168,90,0.1); border-color:rgba(201,168,90,0.22) }
+
+    .form-note{ font-size:13px; color: rgba(255,248,242,0.8); margin-top:8px }
+
+    /* Footer */
+    footer{ padding:34px 18px; text-align:center; color: rgba(255,248,242,0.8); font-size:14px }
+
+    /* Floating music player */
+    .music-player{
+      position:fixed; right:20px; bottom:20px; z-index:80;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.06); padding:10px 12px; border-radius:999px; display:flex; gap:8px; align-items:center;
+      backdrop-filter: blur(6px); box-shadow: 0 10px 30px rgba(11,7,15,0.5);
+    }
+    .music-player button{ background:transparent; border:none; color:var(--ivory); font-weight:600; cursor:pointer; padding:6px 10px; border-radius:8px }
+    .music-player input[type=range]{ width:120px; }
+
+    /* Modal for gallery */
+    .modal{
+      position:fixed; inset:0; display:none; place-items:center; background: rgba(12,8,15,0.7); z-index:120;
+    }
+    .modal .box{ max-width:1000px; width:92%; max-height:92%; border-radius:12px; overflow:hidden; }
+    .modal img{ width:100%; height:auto; display:block }
+
+    /* responsiveness */
+    @media (max-width:900px){
+      .story{ grid-template-columns:1fr; }
+      .hero-card{ padding:28px }
+      .monogram{ font-size:48px }
+    }
+    @media (max-width:600px){
+      .hero{ min-height:640px; padding-top:24px }
+      .monogram{ font-size:40px }
+      .hero h1{ font-size:22px }
+    }
+
+    /* prefers-reduced-motion */
+    @media (prefers-reduced-motion: reduce){
+      * { animation-duration: 0.0001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.0001ms !important; scroll-behavior:auto !important }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- PARTICLE CANVAS (hero) -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Floating petals (decorative) -->
+  <img src="data:image/svg+xml;utf8,\
+  <svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 24 24'><path fill='%23F6E7E4' opacity='0.12' d='M12 2c1.5 3.8 7 6 7 6s-2.2 5.5-6 7c-3.8-1.5-6-7-6-7s5.5-4.5 5-6z'/></svg>" class="petal" style="left:6%; top:10%; transform:scale(1) rotate(-12deg);" aria-hidden="true">
+  <img src="data:image/svg+xml;utf8,\
+  <svg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 24 24'><path fill='%23F6E7E4' opacity='0.10' d='M12 2c1.5 3.8 7 6 7 6s-2.2 5.5-6 7c-3.8-1.5-6-7-6-7s5.5-4.5 5-6z'/></svg>" class="petal" style="left:82%; top:6%; transform:scale(1.2) rotate(18deg);" aria-hidden="true">
+
+  <!-- HERO -->
+  <header class="hero" role="banner" aria-label="Prince and Rashmi wedding invitation hero">
+    <div class="hero-inner wrap" role="region" aria-labelledby="hero-heading">
+      <div class="hero-card" role="group" aria-describedby="hero-sub">
+        <div class="monogram" aria-hidden="true">
+          <span class="letter">P</span>
+          <span class="heart">♡</span>
+          <span class="letter">R</span>
+        </div>
+        <h1 id="hero-heading">Prince <span aria-hidden="true">❤️</span> Rashmi</h1>
+        <p id="hero-sub" class="lead">A Royal Celebration — 07–09 March 2026 • Shidhi Vinayak Garden, Munger</p>
+        <div class="cta-group" role="toolbar" aria-label="Primary actions">
+          <button class="btn" id="btn-view" aria-controls="main">View Invitation</button>
+          <button class="btn btn-ghost" id="btn-rsvp" aria-controls="rsvp">RSVP</button>
+        </div>
+        <p class="small" style="margin-top:12px">With love and blessings, Prince and Rashmi invite you to celebrate their union.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" role="main" aria-label="Invitation main content">
+
+    <!-- Royal Welcome -->
+    <section class="wrap" id="welcome" aria-labelledby="welcome-title">
+      <div class="section-title">
+        <h2 id="welcome-title">Welcome to Our Royal Celebration</h2>
+      </div>
+      <p class="section-desc">We invite you to share our joy and blessings as we begin our new life together. The coming days will be filled with tradition, music, dance, and family — a celebration we hope you'll be a part of.</p>
+    </section>
+
+    <!-- Couple Story -->
+    <section class="wrap" id="story" aria-labelledby="story-title">
+      <div class="section-title">
+        <h2 id="story-title">Our Story</h2>
+      </div>
+      <div class="story">
+        <div class="photo" aria-hidden="true">
+          <!-- Replace placeholder with real hero portrait -->
+          <svg width="100%" height="100%" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Portrait placeholder">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#4b2d63" stop-opacity="0.9"/>
+                <stop offset="1" stop-color="#f7eae6" stop-opacity="0.12"/>
+              </linearGradient>
+            </defs>
+            <rect width="800" height="500" fill="url(#g1)"></rect>
+            <text x="50%" y="50%" fill="#FFF8F2" font-family="Cormorant Garamond, serif" font-size="36" text-anchor="middle">Prince &amp; Rashmi</text>
+          </svg>
+        </div>
+        <div class="copy">
+          <h3 style="font-family: 'Cormorant Garamond', serif; margin-top:0">From first hello to forever</h3>
+          <p>From a coffee conversation to a promise of forever — our journey has been stitched with laughter, shared dreams, and quiet moments that became our world.</p>
+          <ul>
+            <li><strong>How we met:</strong> A chance meeting that turned into a thousand conversations.</li>
+            <li><strong>First date:</strong> Long walks and music by the river.</li>
+            <li><strong>The proposal:</strong> A tender moment surrounded by family.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wedding Events Timeline -->
+    <section class="wrap" id="events" aria-labelledby="events-title">
+      <div class="section-title">
+        <h2 id="events-title">The Celebrations</h2>
+      </div>
+      <p class="section-desc">A three-day celebration of love, family, rituals, and music. We look forward to celebrating these moments with you.</p>
+      <div class="timeline" role="list" aria-label="Wedding events timeline">
+        <article class="event" role="listitem" aria-labelledby="ev1">
+          <div class="date">07 March 2026</div>
+          <div class="title" id="ev1">Haldi Ceremony</div>
+          <div class="meta">9:00 AM onwards • Traditional • Yellow accents encouraged</div>
+        </article>
+
+        <article class="event" role="listitem" aria-labelledby="ev2">
+          <div class="date">08 March 2026</div>
+          <div class="title" id="ev2">Mehndi &amp; Sangeet</div>
+          <div class="meta">6:00 PM onwards • Music, dance & colour</div>
+        </article>
+
+        <article class="event" role="listitem" aria-labelledby="ev3">
+          <div class="date">09 March 2026</div>
+          <div class="title" id="ev3">Wedding Day</div>
+          <div class="meta">4:00 PM Ceremony • 7:00 PM Reception • Formal / Traditional</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Venue -->
+    <section class="wrap" id="venue" aria-labelledby="venue-title">
+      <div class="section-title"><h2 id="venue-title">Venue</h2></div>
+      <p class="section-desc">Shidhi Vinayak Garden — a beautiful garden venue where traditions meet elegance. Find directions and parking details below.</p>
+      <div class="venue-card">
+        <div class="venue-info" aria-label="Venue information">
+          <h3 style="margin-top:0; font-family: 'Cormorant Garamond', serif">Shidhi Vinayak Garden, Munger</h3>
+          <p><strong>Address:</strong> Shidhi Vinayak Garden, Munger, 811214</p>
+          <p><strong>Parking:</strong> On-site parking available. Valet for special guests upon request.</p>
+          <p><strong>Contact:</strong> prince62yadav@gmail.com</p>
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn" href="https://www.google.com/maps?q=Shidhi+Vinayak+Garden+Munger" target="_blank" rel="noopener">Get Directions</a>
+            <a class="btn btn-ghost" href="#" id="btn-add-calendar">Add to Calendar</a>
+          </div>
+        </div>
+        <div class="map-embed" aria-hidden="false" aria-label="Map showing Shidhi Vinayak Garden">
+          <!-- Simple Google Maps embed (no API key needed for basic query) -->
+          <iframe width="100%" height="100%" style="min-height:300px; border:0" loading="lazy"
+            src="https://www.google.com/maps?q=Shidhi+Vinayak+Garden+Munger&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Family -->
+    <section class="wrap" id="family" aria-labelledby="family-title">
+      <div class="section-title"><h2 id="family-title">With Blessings From</h2></div>
+      <p class="section-desc">Family is the foundation of our lives. We honor those who raised us with love and guidance.</p>
+      <div class="family-grid" role="list">
+        <div class="family-card" role="listitem" aria-labelledby="f1">
+          <div class="family-photo" aria-hidden="true"></div>
+          <h4 id="f1" style="margin-bottom:6px">Vijay Kumar</h4>
+          <p style="margin:0; color:rgba(255,248,242,0.85)">Proud father of the groom — his wisdom and warmth guide Prince every day.</p>
+        </div>
+
+        <div class="family-card" role="listitem" aria-labelledby="f2">
+          <div class="family-photo" aria-hidden="true"></div>
+          <h4 id="f2" style="margin-bottom:6px">Kiran Devi</h4>
+          <p style="margin:0; color:rgba(255,248,242,0.85)">Loving mother of the groom — a heart full of love and a home filled with kindness.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="wrap" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-title"><h2 id="gallery-title">Moments & Memories</h2></div>
+      <p class="section-desc">A curated gallery of portraits and candid moments. Tap to enlarge.</p>
+      <div class="gallery-grid" role="list">
+        <!-- Replace src with real images -->
+        <div class="gallery-item" role="listitem"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'><rect width='800' height='600' fill='%233B1F4A'/><text x='50%' y='50%' fill='%23FFF8F2' font-family='Cormorant Garamond' font-size='34' text-anchor='middle'>Gallery Image 1</text></svg>" alt="Prince and Rashmi portrait"></div>
+        <div class="gallery-item" role="listitem"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'><rect width='800' height='600' fill='%234b2d63'/><text x='50%' y='50%' fill='%23FFF8F2' font-family='Cormorant Garamond' font-size='34' text-anchor='middle'>Gallery Image 2</text></svg>" alt="Mehndi preparation"></div>
+        <div class="gallery-item" role="listitem"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'><rect width='800' height='600' fill='%233B1F4A'/><text x='50%' y='50%' fill='%23FFF8F2' font-family='Cormorant Garamond' font-size='34' text-anchor='middle'>Gallery Image 3</text></svg>" alt="Haldi moment"></div>
+        <div class="gallery-item" role="listitem"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'><rect width='800' height='600' fill='%234b2d63'/><text x='50%' y='50%' fill='%23FFF8F2' font-family='Cormorant Garamond' font-size='34' text-anchor='middle'>Gallery Image 4</text></svg>" alt="Wedding reception"></div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="wrap" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="section-title"><h2 id="rsvp-title">Kindly RSVP</h2></div>
+      <p class="section-desc">Your presence is the greatest gift. Please let us know if you will join our celebrations.</p>
+
+      <div class="rsvp-card" role="form" aria-label="RSVP form">
+        <form id="rsvp-form" novalidate>
+          <div class="row">
+            <div style="flex:1; min-width:180px">
+              <label for="name">Full Name *</label>
+              <input id="name" name="name" type="text" maxlength="80" placeholder="e.g., Asha Sharma" required>
+            </div>
+            <div style="flex:1; min-width:180px">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" placeholder="e.g., asha@example.com" required>
+            </div>
+            <div style="flex:1; min-width:160px">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" placeholder="+91 9XXXXXXXXX">
+            </div>
+          </div>
+
+          <div class="row">
+            <div style="flex:1; min-width:160px">
+              <label for="attend">Will you attend? *</label>
+              <select id="attend" name="attend" required>
+                <option value="">Select</option>
+                <option>Yes</option>
+                <option>No</option>
+                <option>Maybe</option>
+              </select>
+            </div>
+            <div style="flex:1; min-width:160px">
+              <label for="guests">Number of Guests</label>
+              <input id="guests" name="guests" type="number" min="0" max="10" value="1">
+            </div>
+          </div>
+
+          <div class="row">
+            <div style="flex:1">
+              <label for="diet">Dietary Preferences</label>
+              <select id="diet" name="diet">
+                <option>Vegetarian</option>
+                <option>Non-Vegetarian</option>
+                <option>Jain</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div style="flex:1">
+              <label for="message">Message (optional)</label>
+              <textarea id="message" name="message" rows="3" maxlength="250" placeholder="Send a message to the couple"></textarea>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:12px; margin-top:8px;">
+            <input id="consent" type="checkbox" required>
+            <label for="consent" style="margin:0">I consent to having my RSVP details stored for event planning. *</label>
+          </div>
+
+          <div style="margin-top:14px; display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+            <button class="btn" type="submit">Send RSVP</button>
+            <button class="btn btn-ghost" type="button" id="btn-reset">Reset</button>
+            <div id="rsvp-msg" class="form-note" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="wrap">
+      <div style="margin-bottom:6px">With love — Prince ❤️ Rashmi</div>
+      <div style="font-size:12px; color:rgba(255,248,242,0.66)">© 2026 Prince &amp; Rashmi • Made with love</div>
+    </div>
+  </footer>
+
+  <!-- Floating Music Player (user must press play to start) -->
+  <div class="music-player" aria-label="Music player">
+    <button id="music-toggle" aria-pressed="false" title="Play music">Play ♫</button>
+    <input id="music-vol" type="range" min="0" max="1" step="0.01" value="0.6" aria-label="Volume">
+  </div>
+  <audio id="music" loop preload="none" src=""></audio>
+  <!-- NOTE: Replace audio src with real instrumental file URL and ensure you hold rights to use the track. -->
+
+  <!-- Gallery Modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="box" role="document">
+      <img id="modal-img" alt="Expanded gallery image">
+    </div>
+  </div>
+
+  <script>
+    /* =========================
+       Helper & init
+       ========================= */
+    (function(){
+      const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* HERO BUTTONS */
+      document.getElementById('btn-view').addEventListener('click', ()=> {
+        document.getElementById('main').scrollIntoView({behavior: prefersReduced ? 'auto' : 'smooth'});
+      });
+      document.getElementById('btn-rsvp').addEventListener('click', ()=> {
+        document.getElementById('rsvp').scrollIntoView({behavior: prefersReduced ? 'auto' : 'smooth'});
+        document.getElementById('name').focus();
+      });
+
+      /* Add to calendar (simple .ics download) */
+      document.getElementById('btn-add-calendar').addEventListener('click', function(e){
+        e.preventDefault();
+        const start = '20260309T100000'; // 4:00 PM IST -> convert if needed (UTC offset ignored in simple ICS)
+        const end = '20260309T235900';
+        const details = [
+          'BEGIN:VCALENDAR',
+          'VERSION:2.0',
+          'BEGIN:VEVENT',
+          'UID:prince-rashmi-20260309',
+          'DTSTAMP:' + (new Date()).toISOString().replace(/[-:.\u0000]/g,''),
+          'SUMMARY:Prince & Rashmi Wedding',
+          'DTSTART:' + start,
+          'DTEND:' + end,
+          'LOCATION:Shidhi Vinayak Garden, Munger, 811214',
+          'DESCRIPTION:Wedding ceremony and reception for Prince & Rashmi.',
+          'END:VEVENT',
+          'END:VCALENDAR'
+        ].join('\\r\\n');
+        const blob = new Blob([details], {type:'text/calendar'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = 'prince-rashmi-wedding.ics';
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+
+      /* =========================
+         PARTICLES (canvas)
+         ========================= */
+      const canvas = document.getElementById('particles');
+      const ctx = canvas.getContext('2d');
+      let W = canvas.width = innerWidth;
+      let H = canvas.height = innerHeight;
+      window.addEventListener('resize', ()=>{ W=canvas.width=innerWidth; H=canvas.height=innerHeight });
+
+      const particles = [];
+      const maxParticles = 60;
+      function rand(min,max){ return Math.random()*(max-min)+min }
+      function initParticles(){
+        particles.length = 0;
+        for(let i=0;i<maxParticles;i++){
+          particles.push({
+            x: rand(0,W),
+            y: rand(0,H/2),
+            r: rand(0.6,2.6),
+            vx: rand(-0.3,0.6),
+            vy: rand(0.1,0.5),
+            alpha: rand(0.02,0.12)
+          });
+        }
+      }
+      initParticles();
+
+      function drawParticles(){
+        ctx.clearRect(0,0,W,H);
+        for(const p of particles){
+          ctx.beginPath();
+          ctx.fillStyle = 'rgba(255, 220, 170,'+p.alpha+')';
+          ctx.arc(p.x, p.y, p.r*6, 0, Math.PI*2);
+          ctx.fill();
+          p.x += p.vx;
+          p.y += p.vy;
+          if(p.x > W + 50) p.x = -50;
+          if(p.x < -50) p.x = W + 50;
+          if(p.y > H) { p.y = -20; p.x = rand(0,W) }
+        }
+      }
+
+      /* Animate only if user allows motion */
+      if(!prefersReduced){
+        (function loop(){
+          drawParticles();
+          requestAnimationFrame(loop);
+        })();
+      } else {
+        drawParticles();
+      }
+
+      /* FLOATING PETALS subtle motion */
+      const petals = document.querySelectorAll('.petal');
+      if(!prefersReduced){
+        petals.forEach((el, i) => {
+          const dur = rand(8,20);
+          el.animate([
+            { transform: el.style.transform + ' translateY(0px) rotate(0deg)'},
+            { transform: el.style.transform + ' translateY(26px) rotate(25deg)'},
+            { transform: el.style.transform + ' translateY(0px) rotate(-6deg)'}
+          ], { duration: dur*1000, iterations: Infinity, direction:'alternate', easing:'ease-in-out' });
+        });
+      }
+
+      /* =========================
+         GALLERY modal
+         ========================= */
+      const modal = document.getElementById('modal');
+      const modalImg = document.getElementById('modal-img');
+      document.querySelectorAll('.gallery-item img').forEach(img=>{
+        img.addEventListener('click', ()=> {
+          modalImg.src = img.src;
+          modal.style.display = 'grid';
+          modal.setAttribute('aria-hidden','false');
+        });
+      });
+      modal.addEventListener('click', (e)=>{
+        if(e.target === modal || e.target === modalImg){ modal.style.display = 'none'; modal.setAttribute('aria-hidden','true'); modalImg.src = ''; }
+      });
+
+      /* =========================
+         RSVP handling (client-side)
+         - stores to localStorage
+         - validates email & phone
+         ========================= */
+      const form = document.getElementById('rsvp-form');
+      const msg = document.getElementById('rsvp-msg');
+
+      function validEmail(email){
+        return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$/.test(email);
+      }
+      function validIndiaPhone(phone){
+        // allow +91 optional, digits only after trimming spaces
+        const cleaned = phone.replace(/\\s|-/g,'');
+        return cleaned === '' || /^(\+91)?[6-9]\\d{9}$/.test(cleaned);
+      }
+
+      form.addEventListener('submit', function(ev){
+        ev.preventDefault();
+        const data = {
+          name: form.name.value.trim(),
+          email: form.email.value.trim(),
+          phone: form.phone.value.trim(),
+          attend: form.attend.value,
+          guests: Number(form.guests.value || 0),
+          diet: form.diet.value,
+          message: form.message.value.trim(),
+          time: new Date().toISOString()
+        };
+
+        // simple validation
+        if(!data.name){ msg.textContent = 'Please enter your full name.'; form.name.focus(); return; }
+        if(!validEmail(data.email)){ msg.textContent = 'Please enter a valid email address.'; form.email.focus(); return; }
+        if(!validIndiaPhone(data.phone)){ msg.textContent = 'Please enter a valid Indian phone number (optional).'; form.phone.focus(); return; }
+        if(!data.attend){ msg.textContent = 'Please select your attendance option.'; form.attend.focus(); return; }
+        if(!form.consent.checked){ msg.textContent = 'Please consent to store your RSVP details.'; form.consent.focus(); return; }
+
+        // Save to localStorage (for offline or demo)
+        const list = JSON.parse(localStorage.getItem('rsvp_list_v1') || '[]');
+        list.push(data);
+        localStorage.setItem('rsvp_list_v1', JSON.stringify(list));
+
+        // Show confirmation
+        msg.textContent = 'Thank you — your RSVP for Prince & Rashmi’s wedding is received. We look forward to celebrating with you. ✨';
+        form.reset();
+
+        // Optionally: POST to a server endpoint
+        // fetch('/api/rsvp', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)})
+        //   .then(()=>{/* success handling */})
+      });
+
+      document.getElementById('btn-reset').addEventListener('click', ()=>{
+        form.reset();
+        msg.textContent = '';
+      });
+
+      /* =========================
+         Floating music player
+         ========================= */
+      const music = document.getElementById('music');
+      const musicToggle = document.getElementById('music-toggle');
+      const musicVol = document.getElementById('music-vol');
+
+      // NOTE: Replace with your instrumental audio file URL (hosted), ensure you have rights.
+      // Example: music.src = 'https://example.com/assets/soft_instrumental_loop.mp3';
+      music.src = ''; // empty; user must provide or we leave it blank.
+
+      musicToggle.addEventListener('click', ()=>{
+        if(!music.src){ alert('No audio file configured. Provide an audio file URL to enable music.'); return; }
+        if(music.paused){
+          music.volume = parseFloat(musicVol.value);
+          music.play();
+          musicToggle.textContent = 'Pause ⏸';
+          musicToggle.setAttribute('aria-pressed','true');
+        } else {
+          music.pause();
+          musicToggle.textContent = 'Play ♫';
+          musicToggle.setAttribute('aria-pressed','false');
+        }
+      });
+      musicVol.addEventListener('input', ()=> { music.volume = parseFloat(musicVol.value) });
+
+      /* =========================
+         Small: keyboard accessibility for modal
+         ========================= */
+      document.addEventListener('keydown', (e)=> {
+        if(e.key === 'Escape' && modal.style.display === 'grid'){
+          modal.style.display = 'none'; modal.setAttribute('aria-hidden','true'); modalImg.src = '';
+        }
+      });
+
+    })();
+  </script>
+</body>
+</html>
